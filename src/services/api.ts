@@ -1,6 +1,12 @@
 // The only module screens may import data from. Today it delegates to the mock
 // layer; swapping to a real backend later means changing this file alone.
-import * as mock from '@/mocks/service';
-import type { Estate } from '@/types';
-
-export const getEstate = (): Promise<Estate> => mock.getEstate();
+export {
+  getEstate, getSettings, updateSettings, resetDemoData,
+  getFields, getTasks, getWorkers, assignTapper, setWorkerActive,
+  getTappingLogs, saveTappingLog,
+  getFieldWork, getExpenses, addExpense,
+  getBatches, getSales, getMarketPrices,
+  getPayroll, setPayStatus, getAdvances, recordAdvance,
+  getDashboard,
+} from '@/mocks/service';
+export type { LogFilter, ExpenseRow, PayrollRow, DashboardSummary } from '@/mocks/service';

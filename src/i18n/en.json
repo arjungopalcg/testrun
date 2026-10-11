@@ -1,13 +1,30 @@
 {
-  "app": { "name": "Rubber Plantation Manager", "short": "Plantation" },
+  "app": {
+    "name": "Rubber Plantation Manager",
+    "short": "Plantation"
+  },
   "nav": {
-    "dashboard": "Dashboard", "today": "Today", "fields": "Fields", "tasks": "Tapping tasks",
-    "workers": "Workers", "tappingLog": "Tapping log", "payments": "Payments", "fieldWork": "Field work",
-    "expenses": "Expenses", "sales": "Production & sales", "settings": "Settings", "more": "More"
+    "dashboard": "Dashboard",
+    "today": "Today",
+    "fields": "Fields",
+    "tasks": "Tapping tasks",
+    "workers": "Workers",
+    "tappingLog": "Tapping log",
+    "payments": "Payments",
+    "fieldWork": "Field work",
+    "expenses": "Expenses",
+    "sales": "Production & sales",
+    "settings": "Settings",
+    "more": "More"
   },
   "header": {
-    "role": "Role", "owner": "Owner", "supervisor": "Supervisor", "language": "Language",
-    "theme": "Toggle dark mode", "openMenu": "Open menu", "estate": "Estate"
+    "role": "Role",
+    "owner": "Owner",
+    "supervisor": "Supervisor",
+    "language": "Language",
+    "theme": "Toggle dark mode",
+    "openMenu": "Open menu",
+    "estate": "Estate"
   },
   "pages": {
     "dashboard": "Estate overview: yield, income, expenses and alerts.",
@@ -23,9 +40,304 @@
     "settings": "Estate details, defaults and preferences."
   },
   "common": {
-    "comingSoon": "Coming in milestone {{n}}",
-    "comingSoonBody": "This screen is part of the app shell. Its content arrives in a later milestone.",
-    "notFound": "Page not found", "goHome": "Go to dashboard"
+    "notFound": "Page not found",
+    "goHome": "Go to dashboard",
+    "search": "Search",
+    "status": "Status",
+    "allStatuses": "All statuses",
+    "noResults": "Nothing matches these filters",
+    "field": "Field",
+    "allFields": "All fields",
+    "yes": "Yes",
+    "no": "No",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "date": "Date",
+    "from": "From",
+    "to": "To",
+    "total": "Total",
+    "month": "Month",
+    "allMonths": "All months",
+    "optional": "optional",
+    "showMore": "Show more",
+    "treesUnit": "trees"
   },
-  "units": { "litres": "L", "kg": "kg", "pct": "%", "inr": "₹" }
+  "units": {
+    "litres": "L",
+    "kg": "kg",
+    "pct": "%",
+    "inr": "₹"
+  },
+  "fieldStatus": {
+    "tapping": "Tapping",
+    "immature": "Immature",
+    "resting": "Resting",
+    "replanting": "Replanting"
+  },
+  "fields": {
+    "name": "Field",
+    "area": "Area (acres)",
+    "clone": "Clone",
+    "planted": "Planted",
+    "trees": "Trees",
+    "system": "Tapping system",
+    "yieldPerAcre": "Dry kg/acre this month",
+    "tasks": "Tasks"
+  },
+  "tasks": {
+    "task": "Task",
+    "tapper": "Tapper",
+    "rainGuard": "Rain guard",
+    "avgKgDay": "Avg dry kg/day (30 d)",
+    "unassigned": "Unassigned",
+    "assignFor": "Tapper for {{task}}",
+    "assigned": "Tapper assignment saved"
+  },
+  "workers": {
+    "name": "Name",
+    "role": "Role",
+    "allRoles": "All roles",
+    "payModel": "Pay model",
+    "phone": "Phone",
+    "tasks": "Tasks",
+    "earningsMonth": "Earned this month (₹)",
+    "active": "Active",
+    "activeFor": "{{name}} is active",
+    "activated": "{{name}} marked active",
+    "deactivated": "{{name}} marked inactive"
+  },
+  "role": {
+    "tapper": "Tapper",
+    "field_worker": "Field worker",
+    "supervisor": "Supervisor"
+  },
+  "payModel": {
+    "perTreeRate": "Per tree · {{rate}}",
+    "perKgRate": "Per kg · {{rate}}",
+    "dailyRate": "Daily wage · {{rate}}",
+    "shareRate": "Share · {{pct}}%"
+  },
+  "tappingStatus": {
+    "tapped": "Tapped",
+    "rain_off": "Rain-off",
+    "absent": "Absent",
+    "holiday": "Holiday"
+  },
+  "today": {
+    "weather": "Partly cloudy · 24°C",
+    "progress": "{{done}} of {{total}} tasks logged",
+    "rainOffAll": "Mark rain-off for all",
+    "rainOffMarked": "{{count}} tasks marked rain-off",
+    "noneDue": "No tasks are due today",
+    "pending": "Not logged",
+    "totalSoFar": "Today so far",
+    "dry": "dry",
+    "dryPreview": "Dry rubber",
+    "saved": "{{task}} saved"
+  },
+  "log": {
+    "trees": "Trees tapped",
+    "litres": "Latex (L)",
+    "drc": "DRC (%)",
+    "scrap": "Scrap (kg)",
+    "dryKg": "Dry rubber (kg)",
+    "notes": "Notes",
+    "exportCsv": "Export CSV",
+    "allTappers": "All tappers",
+    "totalRows": "{{count}} entries"
+  },
+  "pay": {
+    "period": "Pay period",
+    "toDate": "to date",
+    "gross": "Gross (₹)",
+    "advance": "Advance (₹)",
+    "bonus": "Bonus (₹)",
+    "net": "Net pay (₹)",
+    "pending": "Not yet paid",
+    "details": "Details",
+    "days": "Days",
+    "actions": "Actions",
+    "approve": "Approve",
+    "markPaid": "Mark paid",
+    "approved": "Pay approved",
+    "markedPaid": "Marked as paid",
+    "showBreakdown": "Show calculation for {{name}}",
+    "shareWhatsApp": "Share payslip for {{name}} on WhatsApp",
+    "payslip": "Payslip",
+    "outstanding": "Outstanding (₹)",
+    "paidOn": "Paid on {{date}}",
+    "advances": "Advances",
+    "amount": "Amount (₹)",
+    "recovered": "Recovered (₹)",
+    "chooseWorker": "Choose worker",
+    "recordAdvance": "Record advance",
+    "advanceRecorded": "Advance recorded",
+    "line": {
+      "trees": "Trees tapped",
+      "dryRubber": "Dry rubber + half scrap",
+      "days": "Days tapped",
+      "incentive": "Incentive",
+      "share": "Share of sale value",
+      "rainOff": "Rain-off allowance"
+    }
+  },
+  "payStatus": {
+    "draft": "Draft",
+    "approved": "Approved",
+    "paid": "Paid"
+  },
+  "fieldWork": {
+    "upcoming": "Upcoming",
+    "history": "Completed jobs",
+    "type": "Job",
+    "allTypes": "All jobs",
+    "workers": "Workers",
+    "labour": "Labour (₹)",
+    "material": "Material (₹)"
+  },
+  "fieldWorkType": {
+    "weeding": "Weeding",
+    "fertilizer": "Fertilizer",
+    "spraying": "Spraying",
+    "rain_guarding": "Rain-guarding",
+    "other": "Other"
+  },
+  "expenses": {
+    "add": "Add expense",
+    "recurring": "Recurring",
+    "monthly": "Every month",
+    "category": "Category",
+    "allCategories": "All categories",
+    "description": "Description",
+    "mode": "Paid by",
+    "fromPayroll": "from payroll",
+    "saved": "Expense saved"
+  },
+  "expenseCategory": {
+    "wages": "Wages",
+    "fertilizer": "Fertilizer",
+    "chemicals": "Chemicals",
+    "rain_guards": "Rain guards",
+    "tools": "Tools",
+    "formic_acid": "Formic acid",
+    "fuel_firewood": "Fuel and firewood",
+    "transport": "Transport",
+    "repairs": "Repairs",
+    "tax": "Tax",
+    "misc": "Miscellaneous"
+  },
+  "paymentMode": {
+    "cash": "Cash",
+    "upi": "UPI",
+    "bank": "Bank"
+  },
+  "sales": {
+    "stockSheets": "Sheets in stock",
+    "stockHint": "Drying {{drying}} · Smoking {{smoking}} · Ready {{ready}}",
+    "stockValue": "Stock value (est.)",
+    "atRate": "at {{rate}}/kg",
+    "marketToday": "Market price today",
+    "balanceDue": "Balance due from buyers",
+    "batches": "Production batches",
+    "latexIn": "Latex in (L)",
+    "sheets": "Sheets",
+    "sheetWeight": "Sheet weight (kg)",
+    "stage": "Stage",
+    "priceChart": "Market price vs our sales",
+    "priceChartHint": "RSS4, ₹/kg. Dots are our RSS4 sales.",
+    "market": "Market",
+    "ourSale": "Our sale",
+    "sales": "Sales",
+    "buyer": "Buyer",
+    "product": "Product",
+    "qty": "Quantity (kg)",
+    "rate": "Rate (₹/kg)",
+    "received": "Received (₹)",
+    "balance": "Balance (₹)"
+  },
+  "batchStage": {
+    "drying": "Drying",
+    "smoking": "Smoking",
+    "ready": "Ready",
+    "sold": "Sold"
+  },
+  "product": {
+    "latex": "Latex",
+    "RSS1": "RSS 1",
+    "RSS4": "RSS 4",
+    "RSS5": "RSS 5",
+    "scrap": "Scrap"
+  },
+  "settings": {
+    "estate": "Estate",
+    "estateName": "Name",
+    "location": "Location",
+    "area": "Area",
+    "acres": "acres",
+    "owner": "Owner",
+    "preferences": "Preferences",
+    "currencyFormat": "Currency format",
+    "defaults": "Calculation defaults",
+    "defaultDrc": "Default DRC (%)",
+    "density": "Latex density (kg/L)",
+    "payPeriod": "Pay period",
+    "weekly": "Weekly",
+    "fortnightly": "Fortnightly",
+    "monthly": "Monthly",
+    "rainOffAllowance": "Rain-off allowance (₹/day, 0 = off)",
+    "advanceDeduction": "Advance deduction per period (₹)",
+    "saved": "Settings saved",
+    "demoData": "Demo data",
+    "demoDataHint": "Entries you make are kept in this browser. Reset to go back to the original sample estate.",
+    "reset": "Reset demo data",
+    "confirmReset": "Yes, erase my entries",
+    "resetDone": "Demo data restored"
+  },
+  "dash": {
+    "range": "Date range",
+    "ranges": {
+      "today": "Today",
+      "week": "This week",
+      "month": "This month",
+      "season": "Season",
+      "custom": "Custom"
+    },
+    "latex": "Latex collected",
+    "dryRubber": "Dry rubber",
+    "treesTapped": "Trees tapped",
+    "rainOffDays": "Rain-off days",
+    "income": "Income",
+    "incomeHint": "Sale money received",
+    "expenses": "Expenses",
+    "expensesHint": "Includes {{wages}} wages",
+    "profit": "Profit (estimated)",
+    "profitHint": "Income + unsold stock − expenses",
+    "costPerKg": "Cost per kg",
+    "vsMarket": "Market {{rate}}/kg",
+    "dailyChart": "Daily dry rubber (kg)",
+    "dailyChartHint": "Triangles mark rain-off days",
+    "alerts": "Needs attention",
+    "alert": {
+      "unassigned": "Tasks without a tapper: {{count}}",
+      "pendingWages": "Approved wages not yet paid: {{count}}",
+      "advances": "Advances outstanding: {{count}} ({{amount}})",
+      "drcDrop": "Tasks with DRC down >3 points: {{count}}"
+    },
+    "yieldByField": "Yield by field",
+    "kgPerAcre": "Dry kg per acre",
+    "incomeVsExpenses": "Income vs expenses",
+    "last6Months": "Last 6 months, ₹",
+    "expenseSplit": "Expenses by category",
+    "noExpenses": "No expenses in this period",
+    "leaderboard": "Tapper leaderboard",
+    "kgPerDay": "Dry kg/day",
+    "gramsPerTree": "g/tree",
+    "lowYield": "Low yield",
+    "stock": "Stock on hand",
+    "latexToday": "Latex collected today",
+    "sheets": "Sheets",
+    "estValue": "Estimated value",
+    "atToday": "At today's RSS4 price of {{rate}}/kg"
+  }
 }
