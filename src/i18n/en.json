@@ -1,0 +1,31 @@
+{
+  "app": { "name": "Rubber Plantation Manager", "short": "Plantation" },
+  "nav": {
+    "dashboard": "Dashboard", "today": "Today", "fields": "Fields", "tasks": "Tapping tasks",
+    "workers": "Workers", "tappingLog": "Tapping log", "payments": "Payments", "fieldWork": "Field work",
+    "expenses": "Expenses", "sales": "Production & sales", "settings": "Settings", "more": "More"
+  },
+  "header": {
+    "role": "Role", "owner": "Owner", "supervisor": "Supervisor", "language": "Language",
+    "theme": "Toggle dark mode", "openMenu": "Open menu", "estate": "Estate"
+  },
+  "pages": {
+    "dashboard": "Estate overview: yield, income, expenses and alerts.",
+    "today": "Log today's tapping for each task.",
+    "fields": "Blocks of the estate, their clone, age and yield.",
+    "tasks": "Tapping tasks and assigned tappers.",
+    "workers": "Tappers, field workers and supervisors.",
+    "tappingLog": "History of all daily tapping entries.",
+    "payments": "Wages per pay period, advances and payslips.",
+    "fieldWork": "Weeding, fertilizer, spraying and rain-guarding jobs.",
+    "expenses": "All estate expenses by category and field.",
+    "sales": "Sheet production, stock and sales.",
+    "settings": "Estate details, defaults and preferences."
+  },
+  "common": {
+    "comingSoon": "Coming in milestone {{n}}",
+    "comingSoonBody": "This screen is part of the app shell. Its content arrives in a later milestone.",
+    "notFound": "Page not found", "goHome": "Go to dashboard"
+  },
+  "units": { "litres": "L", "kg": "kg", "pct": "%", "inr": "₹" }
+}
