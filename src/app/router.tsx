@@ -1,4 +1,4 @@
-import { createBrowserRouter, Outlet } from 'react-router-dom';
+import { createBrowserRouter, createMemoryRouter, Outlet, type RouteObject } from 'react-router-dom';
 import DashboardPage from '@/features/dashboard/DashboardPage';
 import TodayPage from '@/features/today/TodayPage';
 import FieldsPage from '@/features/fields/FieldsPage';
@@ -14,7 +14,7 @@ import { AppShell } from './AppShell';
 import { NotFound } from './NotFound';
 import { RoleRedirect } from './RoleRedirect';
 
-export const router = createBrowserRouter([
+const routes: RouteObject[] = [
   {
     element: (
       <>
@@ -42,4 +42,8 @@ export const router = createBrowserRouter([
       },
     ],
   },
-]);
+];
+
+// The hosted demo (`npm run build:demo`) runs inside a sandboxed frame where the URL
+// can't be used for routing, so it keeps the route in memory instead.
+export const router = import.meta.env.VITE_MEMORY_ROUTER ? createMemoryRouter(routes) : createBrowserRouter(routes);
